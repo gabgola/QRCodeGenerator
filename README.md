@@ -1,2 +1,2 @@
 # QRCodeGenerator
-A Custom QRCode Generator
+A script to generate a color custom QR code!!
