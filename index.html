@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="qrcode.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Media Queries só funcionou com isso -->
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="sortcut icon" href="images/qrlogo.png" type="image/gif" />
+
+	<title>QR Code Generator</title>
+</head>
+<body>
+<h1>
+	<p class="long_text">QR Code Generator <img src="images/qrlogo.png" alt="QRCode Logo" height="30px" width="30px"></p>
+	<p class="short_text">QR Code<br>Generator <img src="images/qrlogo.png" alt="QRCode Logo" height="10px" width="10px"></p>
+	
+</h1>
+
+<p class="mainText">Selecione a Cor Primária:</p>
+<div class="input-color-container">
+	<input id="baseColor" value="#ffffff" class="input-color" type="color">
+</div>
+
+<p class="mainText">Selecione a Cor Secundária:</p>
+<div class="input-color-container">
+	<input id="mainColor" value="#ffffff" class="input-color" type="color">
+</div>
+<div>
+	<input type="text" class="input-text" id="myLink" placeholder="Insira o Link">
+</div>
+
+<div >
+	<button class="botao" onclick="Generator()">Gerar Código</button>
+	<p class="myQR" id="qrcode"></p>
+</div>
+
+
+ 
+
+</body>
+</html>
